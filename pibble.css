@@ -1,0 +1,41 @@
+html {
+  height: 100%;
+  width: 100%;
+  cursor: url(images/soap.png), auto;
+}
+
+body {
+  background-image: url(images/background.gif);
+  background-repeat: repeat-y;
+  background-size: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  touch-action: none;
+}
+
+#pibble-container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#pibble-image {
+  width: 350px;
+}
+
+.soap-touch {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url(images/soap.png);
+  background-size: cover;
+  background-position: center;
+  pointer-events: none;
+  opacity: 0.9;
+  z-index: 9999;
+  transition: left 0.05s linear, top 0.05s linear;
+}
